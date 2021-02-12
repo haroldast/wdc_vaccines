@@ -10,4 +10,15 @@
     };
 
     tableau.registerConnector(myConnector);
+    
+// Create event listeners
+    $(document).ready(function () {
+    $("#submitButton").click(function () {
+        tableau.connectionName = "USGS Earthquake Feed";
+        tableau.submit();
+    });
+});
+
+    
+    
 })();
